@@ -163,7 +163,7 @@ print*,'complete the first DR'
 
 		
  		do i=1,nr
- 		S=S+((variable_2(j+1,i)-m(j))**2)/(nr-1)   		!finding variance
+ 		S=S + ((variable_2(j+1,i)**2)/(nr-1))-((m(j)**2)   		!finding variance
  		end do
  		
  SD(j)=S				!value of variance
