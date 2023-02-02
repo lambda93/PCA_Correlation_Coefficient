@@ -411,8 +411,9 @@ END DO
 
 		
  		do i=1,NR1
- 		S=S+((PKII(j+1,i)-m(j))**2)/(nr1-1)   		!finding variance
+ 		S=S + (PKII(j+1,i) ** 2)/(nr1-1) - (m(j)**2)   		!finding variance
  		end do
+		
  		
  SD(j)=S				!value of variance
  C(j,j)=SD(j)
